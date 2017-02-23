@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
+import android.view.View;
 import android.widget.Toast;
 import android.util.Log;
 
@@ -145,5 +146,15 @@ public class MainActivity extends AppCompatActivity {
             adView.destroy();
         }
         super.onDestroy();
+    }
+
+    public void GooglePlus (View view){
+        Intent intent = new Intent(getApplicationContext(), GoogleLogin.class);
+        startActivity(intent);
+    }
+
+    public void YotubePlayer (View view){
+        Intent intentt = new Intent(getApplicationContext(), YoutubePlayer.class);
+        startActivity(intentt);
     }
 }

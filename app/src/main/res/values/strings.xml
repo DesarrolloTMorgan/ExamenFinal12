@@ -5,4 +5,8 @@
     <string name="id_banner">ca-app-pub-9463110792639361/3286648337</string>
 
     <string name="facebook_app_id">1860883480845101</string>
+
+    <string name="login_google">Entrar con google+</string>
+    <string name="Error_Reproduccion" formatted="false">Item Error_en_la_reproducción. %1$s</string>
+    <string name="youtube">Entrar a Youtube</string>
 </resources>
