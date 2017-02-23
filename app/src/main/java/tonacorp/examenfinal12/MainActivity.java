@@ -35,21 +35,6 @@ public class MainActivity extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_main);
 
-        /*
-        *
-        *
-        *
-        * Creamos el banner
-        *
-        *
-        *
-        * */
-
-        adView = (AdView) findViewById(R.id.ad_view);
-
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
-        adView.loadAd(adRequest);
 
         /*
         *
@@ -92,6 +77,24 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+
+        /*
+        *
+        *
+        *
+        * Creamos el banner
+        *
+        *
+        *
+        * */
+
+        adView = (AdView) findViewById(R.id.ad_view);
+
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        adView.loadAd(adRequest);
     }
 
     /*
